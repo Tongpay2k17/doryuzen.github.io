@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+.bg-color {
+    background-color: rgb(228, 179, 56);
+    width: 50%;
+    height: 100vh;
+}
+
+.glass-bg {
+/* From https://css.glass */
+background: rgba(255, 255, 255, 0.15);
+border-radius: 16px;
+box-shadow: -10px 10px 25px rgba(0, 0, 0, 0.4);
+backdrop-filter: blur(8px);
+-webkit-backdrop-filter: blur(6.2px);
+border: 2px solid rgb(228, 179, 56);
+height: 80vh;
+width: 80vw;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+.wrapper {
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 50px;
+}
+
+.header-logo {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.nav-links ul li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: #000;
+    margin: 0 20px;
+    font-weight: 600;
+}
+
+.nav-links ul li a:hover {
+    color: rgb(228, 179, 56);
+    transition: 0.2s;
+}
+
+.hero-section {
+    position: absolute;
+    left: 50px;
+    top: 100px;
+}
+
+.hero-section span {
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.hero-section h1 {
+    color: #fff;
+    font-size: 50px;
+}
+
+.hero-section p {
+    color: rgb(141, 104, 12);
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.hero-section button {
+    height: 40px;
+    width: 150px;
+    border-radius: 10px;
+    background-color: rgb(141, 102, 2);
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.hero-section-2 {
+    position: absolute;
+    right: 185px;
+    top: 200px;
+}
+
+.circle-svg {
+    width: 200px;
+    height: 200px;
+    border:1px solid rgb(141, 102, 2);
+    outline:1px solid rgb(141, 102, 2);
+    outline-offset:9px;
+    background-color: rgb(141, 102, 2);
+    position: relative;
+    border-radius: 50%;
+}
+
+.circle-svg img {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    bottom: 0px;
+    left: -55px;
+    border-radius: 0 0 55% 55%;
+}
+
+.social-links {
+    position: absolute;
+    right: 70px;
+    top: 200px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
